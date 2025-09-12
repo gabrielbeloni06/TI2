@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta content="text/html; charset = UTF-8" http-equiv="content-type">
+<title>Controle de Camisas</title>
+</head>
+
+<script type="text/javascript">
+function confirmarDeleteCamisa(id, modelo, marca) {  
+    if (confirm('Confirmar a exclusão da camisa [' + modelo + '] da marca [' + marca + '] (ID ' + id + ')')) {  
+        location.href = '/camisa/delete/' + id;
+    }
+}
+
+function onLoad() {
+    if(document.getElementById("msg").value != ""){
+      alert(document.getElementById("msg").value);
+    }
+}
+</script>
+
+<body onload="onLoad()">
+    <h1>Controle de Estoque de Camisas</h1>
+    <input type="hidden" id="msg" name="msg" value="">
+    <UM-PRODUTO>
+    <br>
+    <LISTAR-PRODUTO>
+    <style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.input--main__style {
+    background-color: #28a745;
+}
+
+.input--button {
+    font-weight: bold;
+    font-family: Arial;
+    font-size: medium;
+    border-color: transparent;
+    border-radius: 7px;
+    display: block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    color: white;
+    cursor: pointer;
+}
+
+.input--register {
+    display: inline-block;
+    width: 200px;
+}
+
+input {
+    display: block;
+    border-radius: 7px;
+    padding: 10px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: lightgray;
+    color: black;
+    margin-bottom: 10px;
+}
+
+form p {
+    text-align: initial;
+    display: inline;
+    margin-left: 15px;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 20px auto;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+td, th {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+tr:hover {
+    background-color: #f5f5f5;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+</style>
+</body>
+</html>
