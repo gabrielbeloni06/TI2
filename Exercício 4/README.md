@@ -74,8 +74,6 @@ Abaixo estão os screenshots dos recursos configurados no portal do Microsoft Az
 
 ### 2. Dentro do SQL
 
-*Substitua 'caminho/para/foto-sql.png' pelo nome e caminho real da sua imagem.*
-
 ![SQL](sql.png)
 
 **Descrição:** Detalhes do servidor de banco de dados criado no Azure. Este recurso foi utilizado para testes de conexão com clientes de banco de dados como o DBeaver.
@@ -85,3 +83,4 @@ Abaixo estão os screenshots dos recursos configurados no portal do Microsoft Az
 ![Maquina/IA](machine.png)
 
 **Descrição:** Este é o recurso principal da **Opção (b)**. É o painel do "Serviço de Linguagem" (IA). É desta tel, que o código Java (`AI.java`) utiliza para consumir o modelo de Reconhecimento de Entidades.
+
